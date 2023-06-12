@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %} Agregar Cancion {% endblock %}
+
+{% block contenido %}
+<div class="card">
+    <div class="card-header">
+        Nueva Cancion
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la canción</h4>
+        
+        {% include 'canciones/form.html' %}
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
+{% endblock %}
